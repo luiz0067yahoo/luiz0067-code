@@ -1,8 +1,8 @@
 <?php
 /**
- * Plugin Name:       CodeMirror Editor Pro
+ * Plugin Name:       Luiz0067 Editor
  * Plugin URI:        https://github.com/luiz0067yahoo/luiz0067-code
- * Description:       A native, modern WordPress Gutenberg block for source code editing powered by CodeMirror with multi-language and theming support.
+ * Description:       Native Gutenberg code editor block with authorial syntax highlighting, multi-language, and theming support.
  * Version:           1.0.0
  * Requires at least: 6.0
  * Requires PHP:      7.4
@@ -10,10 +10,10 @@
  * Author URI:        https://profiles.wordpress.org/luiz0067/
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       wp-codemirror-block
+ * Text Domain:       luiz0067-editor
  * Domain Path:       /languages
  *
- * @package           WPCodeMirrorBlock
+ * @package           Luiz0067Editor
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -27,29 +27,29 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @see https://developer.wordpress.org/reference/functions/register_block_type/
  */
-function wp_codemirror_block_init() {
+function luiz0067_editor_init() {
 	// Register the block from metadata
 	register_block_type( __DIR__ );
 
 	// Set script translations for Gutenberg i18n
 	if ( function_exists( 'wp_set_script_translations' ) ) {
 		wp_set_script_translations(
-			'custom-codemirror-block-editor-script',
-			'wp-codemirror-block',
+			'luiz0067-editor-editor-script',
+			'luiz0067-editor',
 			plugin_dir_path( __FILE__ ) . 'languages'
 		);
 	}
 }
-add_action( 'init', 'wp_codemirror_block_init' );
+add_action( 'init', 'luiz0067_editor_init' );
 
 /**
  * Load plugin textdomain for internationalization.
  */
-function wp_codemirror_block_load_textdomain() {
+function luiz0067_editor_load_textdomain() {
 	load_plugin_textdomain(
-		'wp-codemirror-block',
+		'luiz0067-editor',
 		false,
 		dirname( plugin_basename( __FILE__ ) ) . '/languages'
 	);
 }
-add_action( 'plugins_loaded', 'wp_codemirror_block_load_textdomain' );
+add_action( 'plugins_loaded', 'luiz0067_editor_load_textdomain' );

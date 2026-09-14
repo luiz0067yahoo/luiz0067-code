@@ -4,6 +4,11 @@
 import { useBlockProps } from '@wordpress/block-editor';
 
 /**
+ * Authorial syntax decorator engine
+ */
+import { decorateCode } from './decorator';
+
+/**
  * Save Component for frontend serialization
  *
  * @param {object} props
@@ -11,13 +16,15 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {JSX.Element} Serialized markup
  */
 export default function save({ attributes }) {
-	const { code, language, theme } = attributes;
+	const { code = '', language = 'javascript', theme = 'default' } = attributes;
 
 	const blockProps = useBlockProps.save({
-		className: `wp-block-custom-codemirror-block theme-${theme}`,
+		className: `luiz-editor-container theme-${theme}`,
 		'data-language': language,
 		'data-theme': theme,
 	});
+
+	const highlightedHtml = decorateCode(code, language);
 
 	return (
 		<div {...blockProps}>
@@ -39,6 +46,7 @@ export default function save({ attributes }) {
 						aria-label="Copy code to clipboard"
 						title="Copy code"
 						data-copied-text="Copied!"
+						onClick="navigator.clipboard.writeText(this.closest('.luiz-editor-container').querySelector('code').innerText).then(()=>{var b=this,o=b.innerHTML;b.classList.add('copied');b.querySelector('.copy-label').innerText='Copied!';setTimeout(()=>{b.classList.remove('copied');b.innerHTML=o;},2000);})"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -60,9 +68,10 @@ export default function save({ attributes }) {
 				</div>
 			</div>
 			<pre className="custom-codemirror-pre">
-				<code className={`language-${language}`}>
-					{code}
-				</code>
+				<code
+					className={`language-${language}`}
+					dangerouslySetInnerHTML={{ __html: highlightedHtml }}
+				/>
 			</pre>
 		</div>
 	);

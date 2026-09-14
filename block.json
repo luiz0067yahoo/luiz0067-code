@@ -3,14 +3,14 @@
   "apiVersion": 3,
   "name": "custom/codemirror-block",
   "version": "1.0.0",
-  "title": "CodeMirror Editor Pro",
+  "title": "Luiz0067 Editor",
   "category": "formatting",
   "icon": "editor-code",
-  "description": "Native professional code editor block powered by CodeMirror.",
+  "description": "Native professional code editor block with authorial syntax highlighting.",
   "keywords": [
-    "codemirror",
     "code",
     "syntax highlighting",
+    "editor",
     "developer"
   ],
   "supports": {
@@ -34,7 +34,7 @@
       "default": "default"
     }
   },
-  "textdomain": "wp-codemirror-block",
+  "textdomain": "luiz0067-editor",
   "editorScript": "file:./build/index.js",
   "editorStyle": "file:./build/index.css",
   "style": "file:./build/style-index.css"
