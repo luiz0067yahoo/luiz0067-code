@@ -1,52 +1,40 @@
 {
   "translation-revision-date": "2026-09-14 12:00:00+0000",
-  "generator": "WP-CodeMirror-Block-i18n",
-  "domain": "luiz0067-editor",
+  "generator": "Luiz0067-Code-i18n",
+  "domain": "luiz0067-code",
   "locale_data": {
-    "luiz0067-editor": {
+    "luiz0067-code": {
       "": {
-        "domain": "luiz0067-editor",
+        "domain": "luiz0067-code",
         "lang": "en_US",
         "plural-forms": "nplurals=2; plural=(n != 1);"
       },
-      "CodeMirror Editor Pro": [
-        "CodeMirror Editor Pro"
+      "Luiz0067 Code": [
+        "Luiz0067 Code"
       ],
-      "Native professional code editor block powered by CodeMirror.": [
-        "Native professional code editor block powered by CodeMirror."
+      "Native professional code block with authorial syntax highlighting.": [
+        "Native professional code block with authorial syntax highlighting."
       ],
-      "CodeMirror Settings": [
-        "CodeMirror Settings"
+      "Configurações do Código": [
+        "Code Settings"
       ],
-      "Programming Language": [
-        "Programming Language"
+      "Selecione a linguagem": [
+        "Select language"
       ],
-      "Select the syntax highlighting language for this code block.": [
-        "Select the syntax highlighting language for this code block."
+      "Define a sintaxe e o realce de cores correspondente ao código inserido.": [
+        "Configures syntax highlighting for the selected programming language."
       ],
-      "Editor Theme": [
-        "Editor Theme"
+      "Tema de formatação": [
+        "Formatting theme"
       ],
-      "Choose a visual color theme for the editor and preview.": [
-        "Choose a visual color theme for the editor and preview."
+      "Escolha o esquema de cores para o editor e a exibição no site.": [
+        "Choose the color scheme for the editor and public display."
       ],
-      "Line Numbers": [
-        "Line Numbers"
+      "Estatísticas:": [
+        "Statistics:"
       ],
-      "Display line numbers in the editor": [
-        "Display line numbers in the editor"
-      ],
-      "Type or paste your code here...": [
+      "Digite ou cole seu código aqui...": [
         "Type or paste your code here..."
-      ],
-      "Copy Code": [
-        "Copy Code"
-      ],
-      "Code copied to clipboard!": [
-        "Code copied to clipboard!"
-      ],
-      "Code editor cannot be empty.": [
-        "Code editor cannot be empty."
       ]
     }
   },
@@ -54,9 +42,8 @@
   "language.help": "Configures syntax highlighting for the selected programming language.",
   "theme.label": "Formatting theme",
   "theme.help": "Choose the color scheme for the editor and public display.",
-  "settings.title": "CodeMirror Settings",
+  "settings.title": "Code Settings",
   "editor.placeholder": "Type or paste your code here...",
   "editor.copy": "Copy Code",
-  "editor.copied": "Code copied to clipboard!",
-  "error.empty": "Code editor cannot be empty."
+  "editor.copied": "Code copied to clipboard!"
 }

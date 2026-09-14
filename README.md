@@ -1,4 +1,4 @@
-# Luiz0067 Editor
+# Luiz0067 Code
 
 **Contributors:** luiz0067  
 **Donate link:** https://profiles.wordpress.org/luiz0067/  
@@ -16,7 +16,7 @@ Native Gutenberg code editor block with authorial syntax highlighting, customiza
 
 ## Description
 
-**Luiz0067 Editor** is a native WordPress Gutenberg block designed for developers, educators, and technical writers who need a high-performance, lightweight code editor inside the block editor.
+**Luiz0067 Code** is a native WordPress Gutenberg block designed for developers, educators, and technical writers who need a high-performance, lightweight code editor inside the block editor.
 
 Built with an authorial, zero-dependency text decoration and syntax highlighting engine, this block offers real-time syntax highlighting, multiple programming languages, instant theme switching, a modern macOS-inspired terminal header with window controls, and a quick copy-to-clipboard button.
 
@@ -53,10 +53,10 @@ Built with an authorial, zero-dependency text decoration and syntax highlighting
 ## 📂 Project Structure
 
 ```text
-luiz0067-editor/
+luiz0067-code/
 ├── package.json               # Dependencies and build scripts
 ├── block.json                 # Block metadata (API v3)
-├── luiz0067-editor.php        # Main WordPress plugin entrypoint
+├── luiz0067-code.php          # Main WordPress plugin entrypoint
 ├── readme.txt                 # WordPress.org official readme
 ├── README.md                  # Project documentation
 ├── src/                       # Source React and SCSS files
@@ -89,9 +89,9 @@ luiz0067-editor/
 - **npm**: v8.0.0+
 
 ### Installation
-1. Download or upload the `luiz0067-editor.zip` file in your WordPress admin via **Plugins > Add New Plugin > Upload Plugin**.
+1. Download or upload the `luiz0067-code.zip` file in your WordPress admin via **Plugins > Add New Plugin > Upload Plugin**.
 2. Activate the plugin.
-3. In the block editor, type `/editor` or choose **Luiz0067 Editor** under the Formatting category.
+3. In the block editor, type `/code` or choose **Luiz0067 Code** under the Formatting category.
 
 ---
 

@@ -15,11 +15,11 @@ import { decorateCode } from './decorator';
  * @param {object} props.attributes Block attributes
  * @return {JSX.Element} Serialized markup
  */
-export default function save({ attributes }) {
+export default function Save({ attributes }) {
 	const { code = '', language = 'javascript', theme = 'default' } = attributes;
 
 	const blockProps = useBlockProps.save({
-		className: `luiz-editor-container theme-${theme}`,
+		className: `luiz-code-container theme-${theme}`,
 		'data-language': language,
 		'data-theme': theme,
 	});
@@ -28,25 +28,25 @@ export default function save({ attributes }) {
 
 	return (
 		<div {...blockProps}>
-			<div className="custom-codemirror-header">
-				<div className="custom-codemirror-window-dots" aria-hidden="true">
+			<div className="luiz-code-header">
+				<div className="luiz-code-window-dots" aria-hidden="true">
 					<span className="dot dot-red" />
 					<span className="dot dot-yellow" />
 					<span className="dot dot-green" />
 				</div>
-				<div className="custom-codemirror-header-center">
-					<span className="custom-codemirror-language-badge">
+				<div className="luiz-code-header-center">
+					<span className="luiz-code-language-badge">
 						{language ? language.toUpperCase() : 'CODE'}
 					</span>
 				</div>
-				<div className="custom-codemirror-header-right">
+				<div className="luiz-code-header-right">
 					<button
 						type="button"
-						className="custom-codemirror-copy-btn"
+						className="luiz-code-copy-btn"
 						aria-label="Copy code to clipboard"
 						title="Copy code"
 						data-copied-text="Copied!"
-						onClick="navigator.clipboard.writeText(this.closest('.luiz-editor-container').querySelector('code').innerText).then(()=>{var b=this,o=b.innerHTML;b.classList.add('copied');b.querySelector('.copy-label').innerText='Copied!';setTimeout(()=>{b.classList.remove('copied');b.innerHTML=o;},2000);})"
+						onClick="navigator.clipboard.writeText(this.closest('.luiz-code-container').querySelector('code').innerText).then(()=>{var b=this,o=b.innerHTML;b.classList.add('copied');b.querySelector('.copy-label').innerText='Copied!';setTimeout(()=>{b.classList.remove('copied');b.innerHTML=o;},2000);})"
 					>
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -67,7 +67,7 @@ export default function save({ attributes }) {
 					</button>
 				</div>
 			</div>
-			<pre className="custom-codemirror-pre">
+			<pre className="luiz-code-pre">
 				<code
 					className={`language-${language}`}
 					dangerouslySetInnerHTML={{ __html: highlightedHtml }}

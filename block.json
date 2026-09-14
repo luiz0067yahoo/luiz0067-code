@@ -1,16 +1,15 @@
 {
   "$schema": "https://schemas.wp.org/trunk/block.json",
   "apiVersion": 3,
-  "name": "custom/codemirror-block",
+  "name": "luiz0067/code",
   "version": "1.0.0",
-  "title": "Luiz0067 Editor",
+  "title": "Luiz0067 Code",
   "category": "formatting",
   "icon": "editor-code",
-  "description": "Native professional code editor block with authorial syntax highlighting.",
+  "description": "Native professional code block with authorial syntax highlighting.",
   "keywords": [
     "code",
     "syntax highlighting",
-    "editor",
     "developer"
   ],
   "supports": {
@@ -34,7 +33,7 @@
       "default": "default"
     }
   },
-  "textdomain": "luiz0067-editor",
+  "textdomain": "luiz0067-code",
   "editorScript": "file:./build/index.js",
   "editorStyle": "file:./build/index.css",
   "style": "file:./build/style-index.css"

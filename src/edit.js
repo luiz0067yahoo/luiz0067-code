@@ -86,7 +86,7 @@ export default function Edit({ attributes, setAttributes }) {
 	};
 
 	const blockProps = useBlockProps({
-		className: `luiz-editor-container theme-${theme}`,
+		className: `luiz-code-container theme-${theme}`,
 	});
 
 	const lineCount = lines.length;
@@ -96,34 +96,34 @@ export default function Edit({ attributes, setAttributes }) {
 		<div {...blockProps}>
 			<InspectorControls>
 				<PanelBody
-					title={__('Configurações do Editor', 'luiz0067-editor')}
+					title={__('Configurações do Código', 'luiz0067-code')}
 					initialOpen={true}
 				>
 					<SelectControl
-						label={__('Selecione a linguagem', 'luiz0067-editor')}
+						label={__('Selecione a linguagem', 'luiz0067-code')}
 						help={__(
 							'Define a sintaxe e o realce de cores correspondente ao código inserido.',
-							'luiz0067-editor'
+							'luiz0067-code'
 						)}
 						value={language}
 						options={LANGUAGE_OPTIONS}
 						onChange={(newLang) => setAttributes({ language: newLang })}
 					/>
 					<SelectControl
-						label={__('Tema de formatação', 'luiz0067-editor')}
+						label={__('Tema de formatação', 'luiz0067-code')}
 						help={__(
 							'Escolha o esquema de cores para o editor e a exibição no site.',
-							'luiz0067-editor'
+							'luiz0067-code'
 						)}
 						value={theme}
 						options={THEME_OPTIONS}
 						onChange={(newTheme) => setAttributes({ theme: newTheme })}
 					/>
-					<PanelRow className="custom-codemirror-meta-row">
+					<PanelRow className="luiz-code-meta-row">
 						<span className="components-base-control__label">
-							{__('Estatísticas:', 'luiz0067-editor')}
+							{__('Estatísticas:', 'luiz0067-code')}
 						</span>
-						<span className="custom-codemirror-stats-badge">
+						<span className="luiz-code-stats-badge">
 							{lineCount} {lineCount === 1 ? 'linha' : 'linhas'} | {charCount} chars
 						</span>
 					</PanelRow>
@@ -131,27 +131,27 @@ export default function Edit({ attributes, setAttributes }) {
 			</InspectorControls>
 
 			{/* Terminal window header */}
-			<div className="custom-codemirror-header">
-				<div className="custom-codemirror-window-dots" aria-hidden="true">
+			<div className="luiz-code-header">
+				<div className="luiz-code-window-dots" aria-hidden="true">
 					<span className="dot dot-red" />
 					<span className="dot dot-yellow" />
 					<span className="dot dot-green" />
 				</div>
-				<div className="custom-codemirror-header-center">
-					<span className="custom-codemirror-title">Luiz0067 Editor</span>
+				<div className="luiz-code-header-center">
+					<span className="luiz-code-title">Luiz0067 Code</span>
 				</div>
-				<div className="custom-codemirror-header-right">
-					<span className="custom-codemirror-language-badge">
+				<div className="luiz-code-header-right">
+					<span className="luiz-code-language-badge">
 						{language.toUpperCase()}
 					</span>
-					<span className="custom-codemirror-theme-badge">
+					<span className="luiz-code-theme-badge">
 						{theme}
 					</span>
 				</div>
 			</div>
 
 			{/* Interactive editor workspace */}
-			<div className="luiz-editor-workspace">
+			<div className="luiz-code-workspace">
 				{/* Line numbers column */}
 				<div className="luiz-line-numbers" ref={lineNumbersRef} aria-hidden="true">
 					{lines.map((num) => (
@@ -177,11 +177,11 @@ export default function Edit({ attributes, setAttributes }) {
 					{/* Transparent interactive textarea for typing */}
 					<textarea
 						ref={textareaRef}
-						className="luiz-editor-textarea"
+						className="luiz-code-textarea"
 						value={code}
 						placeholder={__(
 							'Digite ou cole seu código aqui...',
-							'luiz0067-editor'
+							'luiz0067-code'
 						)}
 						onChange={(e) => setAttributes({ code: e.target.value })}
 						onScroll={handleScroll}

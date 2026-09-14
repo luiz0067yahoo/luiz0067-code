@@ -1,11 +1,11 @@
 /**
- * Luiz Editor - Gutenberg Block Editor Styles
+ * Luiz Code - Gutenberg Block Editor Styles
  * Author: Luiz (luiz0067)
  * License: GPL-2.0-or-later
  */
 
-.luiz-editor-container {
-	.luiz-editor-workspace {
+.luiz-code-container {
+	.luiz-code-workspace {
 		display: flex;
 		position: relative;
 		min-height: 180px;
@@ -70,7 +70,7 @@
 			}
 
 			/* Transparent editable textarea directly above */
-			.luiz-editor-textarea {
+			.luiz-code-textarea {
 				position: relative;
 				width: 100%;
 				height: 100%;
@@ -109,31 +109,31 @@
 }
 
 /* Caret color adjustments for themes */
-.luiz-editor-container.theme-default .luiz-editor-textarea {
+.luiz-code-container.theme-default .luiz-code-textarea {
 	caret-color: #24292e;
 }
-.luiz-editor-container.theme-one-dark .luiz-editor-textarea {
+.luiz-code-container.theme-one-dark .luiz-code-textarea {
 	caret-color: #528bff;
 }
-.luiz-editor-container.theme-dracula .luiz-editor-textarea {
+.luiz-code-container.theme-dracula .luiz-code-textarea {
 	caret-color: #f8f8f0;
 }
-.luiz-editor-container.theme-solarized .luiz-editor-textarea {
+.luiz-code-container.theme-solarized .luiz-code-textarea {
 	caret-color: #93a1a1;
 }
-.luiz-editor-container.theme-nord .luiz-editor-textarea {
+.luiz-code-container.theme-nord .luiz-code-textarea {
 	caret-color: #88c0d0;
 }
 
 /* Gutenberg sidebar panel row */
-.custom-codemirror-meta-row {
+.luiz-code-meta-row {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding-top: 10px;
 	border-top: 1px solid #e0e0e0;
 
-	.custom-codemirror-stats-badge {
+	.luiz-code-stats-badge {
 		font-size: 11px;
 		font-weight: 600;
 		background: #f0f0f0;

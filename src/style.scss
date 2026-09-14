@@ -1,10 +1,10 @@
 /**
- * Luiz Editor - Shared & Frontend Styles
+ * Luiz Code - Shared & Frontend Styles
  * Author: Luiz (luiz0067)
  * License: GPL-2.0-or-later
  */
 
-.luiz-editor-container {
+.luiz-code-container {
 	position: relative;
 	border-radius: 8px;
 	overflow: hidden;
@@ -18,7 +18,7 @@
 	}
 
 	/* Terminal Header Window */
-	.custom-codemirror-header {
+	.luiz-code-header {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
@@ -27,7 +27,7 @@
 		border-bottom: 1px solid rgba(128, 128, 128, 0.15);
 		user-select: none;
 
-		.custom-codemirror-window-dots {
+		.luiz-code-window-dots {
 			display: flex;
 			gap: 6px;
 			align-items: center;
@@ -50,7 +50,7 @@
 			}
 		}
 
-		.custom-codemirror-header-center {
+		.luiz-code-header-center {
 			display: flex;
 			align-items: center;
 			font-weight: 600;
@@ -58,13 +58,13 @@
 			opacity: 0.85;
 		}
 
-		.custom-codemirror-header-right {
+		.luiz-code-header-right {
 			display: flex;
 			align-items: center;
 			gap: 8px;
 		}
 
-		.custom-codemirror-language-badge {
+		.luiz-code-language-badge {
 			font-size: 10px;
 			font-weight: 700;
 			text-transform: uppercase;
@@ -74,7 +74,7 @@
 			background: rgba(128, 128, 128, 0.15);
 		}
 
-		.custom-codemirror-theme-badge {
+		.luiz-code-theme-badge {
 			font-size: 10px;
 			padding: 2px 6px;
 			border-radius: 4px;
@@ -82,7 +82,7 @@
 			background: rgba(128, 128, 128, 0.1);
 		}
 
-		.custom-codemirror-copy-btn {
+		.luiz-code-copy-btn {
 			display: inline-flex;
 			align-items: center;
 			gap: 5px;
@@ -113,7 +113,7 @@
 		}
 	}
 
-	pre.custom-codemirror-pre {
+	pre.luiz-code-pre {
 		margin: 0;
 		padding: 16px 20px;
 		overflow-x: auto;
@@ -138,12 +138,12 @@
    ========================================================================== */
 
 /* 1. Theme: Default (Clean Light) */
-.luiz-editor-container.theme-default {
+.luiz-code-container.theme-default {
 	background-color: #f8f9fa;
 	color: #24292e;
 	border: 1px solid #e1e4e8;
 
-	.custom-codemirror-header {
+	.luiz-code-header {
 		background-color: #f1f3f5;
 		color: #495057;
 	}
@@ -164,12 +164,12 @@
 }
 
 /* 2. Theme: One Dark */
-.luiz-editor-container.theme-one-dark {
+.luiz-code-container.theme-one-dark {
 	background-color: #282c34;
 	color: #abb2bf;
 	border: 1px solid #3b4048;
 
-	.custom-codemirror-header {
+	.luiz-code-header {
 		background-color: #21252b;
 		color: #9da5b4;
 	}
@@ -190,12 +190,12 @@
 }
 
 /* 3. Theme: Dracula */
-.luiz-editor-container.theme-dracula {
+.luiz-code-container.theme-dracula {
 	background-color: #282a36;
 	color: #f8f8f2;
 	border: 1px solid #44475a;
 
-	.custom-codemirror-header {
+	.luiz-code-header {
 		background-color: #1e1f29;
 		color: #6272a4;
 	}
@@ -216,12 +216,12 @@
 }
 
 /* 4. Theme: Solarized Dark */
-.luiz-editor-container.theme-solarized {
+.luiz-code-container.theme-solarized {
 	background-color: #002b36;
 	color: #839496;
 	border: 1px solid #073642;
 
-	.custom-codemirror-header {
+	.luiz-code-header {
 		background-color: #001f27;
 		color: #586e75;
 	}
@@ -242,12 +242,12 @@
 }
 
 /* 5. Theme: Nord (Arctic Frost) */
-.luiz-editor-container.theme-nord {
+.luiz-code-container.theme-nord {
 	background-color: #2e3440;
 	color: #d8dee9;
 	border: 1px solid #3b4252;
 
-	.custom-codemirror-header {
+	.luiz-code-header {
 		background-color: #242933;
 		color: #4c566a;
 	}

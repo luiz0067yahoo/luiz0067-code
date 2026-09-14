@@ -1,7 +1,7 @@
 {
-  "name": "luiz0067-editor",
+  "name": "luiz0067-code",
   "version": "1.0.0",
-  "description": "Native professional Gutenberg code editor block with authorial syntax highlighting.",
+  "description": "Native professional Gutenberg code block with authorial syntax highlighting.",
   "author": "Luiz (luiz0067)",
   "license": "GPL-2.0-or-later",
   "main": "build/index.js",

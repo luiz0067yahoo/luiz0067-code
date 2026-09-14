@@ -1,4 +1,4 @@
-=== Luiz0067 Editor ===
+=== Luiz0067 Code ===
 Contributors: luiz0067
 Donate link: https://profiles.wordpress.org/luiz0067/
 Tags: code block, syntax highlighting, developer, editor, gutenberg
@@ -13,7 +13,7 @@ Native Gutenberg code editor block with authorial syntax highlighting, customiza
 
 == Description ==
 
-Luiz0067 Editor is a native WordPress Gutenberg block designed for developers, educators, and technical writers who need a high-performance, lightweight code editor inside the block editor.
+Luiz0067 Code is a native WordPress Gutenberg block designed for developers, educators, and technical writers who need a high-performance, lightweight code editor inside the block editor.
 
 Built with an authorial, zero-dependency text decoration and syntax highlighting engine, this block offers real-time syntax highlighting, multiple programming languages, instant theme switching, a modern macOS-inspired terminal header with window controls, and a quick copy-to-clipboard button.
 
@@ -45,10 +45,10 @@ The plugin is 100% self-contained and operates completely offline. All JavaScrip
 
 == Installation ==
 
-1. Upload the `luiz0067-editor` folder to your `/wp-content/plugins/` directory, or install the ZIP file via **Plugins > Add New Plugin > Upload Plugin**.
+1. Upload the `luiz0067-code` folder to your `/wp-content/plugins/` directory, or install the ZIP file via **Plugins > Add New Plugin > Upload Plugin**.
 2. Activate the plugin through the **Plugins** screen in WordPress.
 3. Open any post or page in the Gutenberg block editor.
-4. Insert the block by typing `/editor` or searching for **Luiz0067 Editor**.
+4. Insert the block by typing `/code` or searching for **Luiz0067 Code**.
 
 == Frequently Asked Questions ==
 
