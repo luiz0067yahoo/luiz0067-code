@@ -1,0 +1,62 @@
+{
+  "translation-revision-date": "2026-09-14 12:00:00+0000",
+  "generator": "WP-CodeMirror-Block-i18n",
+  "domain": "wp-codemirror-block",
+  "locale_data": {
+    "wp-codemirror-block": {
+      "": {
+        "domain": "wp-codemirror-block",
+        "lang": "pt_BR",
+        "plural-forms": "nplurals=2; plural=(n > 1);"
+      },
+      "CodeMirror Editor Pro": [
+        "CodeMirror Editor Pro"
+      ],
+      "Native professional code editor block powered by CodeMirror.": [
+        "Bloco nativo profissional de edição de código-fonte alimentado por CodeMirror."
+      ],
+      "CodeMirror Settings": [
+        "Configurações do CodeMirror"
+      ],
+      "Programming Language": [
+        "Linguagem de Programação"
+      ],
+      "Select the syntax highlighting language for this code block.": [
+        "Selecione a linguagem para o realce de sintaxe deste bloco de código."
+      ],
+      "Editor Theme": [
+        "Tema do Editor"
+      ],
+      "Choose a visual color theme for the editor and preview.": [
+        "Escolha um tema visual de cores para o editor e pré-visualização."
+      ],
+      "Line Numbers": [
+        "Números de Linha"
+      ],
+      "Display line numbers in the editor": [
+        "Exibir numeração de linhas no editor"
+      ],
+      "Type or paste your code here...": [
+        "Digite ou cole seu código aqui..."
+      ],
+      "Copy Code": [
+        "Copiar Código"
+      ],
+      "Code copied to clipboard!": [
+        "Código copiado para a área de transferência!"
+      ],
+      "Code editor cannot be empty.": [
+        "O editor de código não pode estar vazio."
+      ]
+    }
+  },
+  "language.label": "Selecione a linguagem",
+  "language.help": "Define a sintaxe e o realce de cores correspondente ao código inserido.",
+  "theme.label": "Tema de formatação",
+  "theme.help": "Escolha o esquema de cores para o editor e a exibição no site.",
+  "settings.title": "Configurações do CodeMirror",
+  "editor.placeholder": "Digite ou cole seu código aqui...",
+  "editor.copy": "Copiar Código",
+  "editor.copied": "Código copiado para a área de transferência!",
+  "error.empty": "O editor de código não pode estar vazio."
+}

@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "custom/codemirror-block",
+  "version": "1.0.0",
+  "title": "CodeMirror Editor Pro",
+  "category": "formatting",
+  "icon": "editor-code",
+  "description": "Native professional code editor block powered by CodeMirror.",
+  "keywords": [
+    "codemirror",
+    "code",
+    "syntax highlighting",
+    "developer"
+  ],
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "default": ""
+    },
+    "language": {
+      "type": "string",
+      "default": "javascript"
+    },
+    "theme": {
+      "type": "string",
+      "default": "default"
+    }
+  },
+  "textdomain": "wp-codemirror-block",
+  "editorScript": "file:./build/index.js",
+  "editorStyle": "file:./build/index.css",
+  "style": "file:./build/style-index.css"
+}

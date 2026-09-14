@@ -1,0 +1,62 @@
+{
+  "translation-revision-date": "2026-09-14 12:00:00+0000",
+  "generator": "WP-CodeMirror-Block-i18n",
+  "domain": "wp-codemirror-block",
+  "locale_data": {
+    "wp-codemirror-block": {
+      "": {
+        "domain": "wp-codemirror-block",
+        "lang": "es_ES",
+        "plural-forms": "nplurals=2; plural=(n != 1);"
+      },
+      "CodeMirror Editor Pro": [
+        "CodeMirror Editor Pro"
+      ],
+      "Native professional code editor block powered by CodeMirror.": [
+        "Bloque nativo profesional para edición de código fuente impulsado por CodeMirror."
+      ],
+      "CodeMirror Settings": [
+        "Configuración de CodeMirror"
+      ],
+      "Programming Language": [
+        "Lenguaje de Programación"
+      ],
+      "Select the syntax highlighting language for this code block.": [
+        "Seleccione el lenguaje para el resaltado de sintaxis de este bloque de código."
+      ],
+      "Editor Theme": [
+        "Tema del Editor"
+      ],
+      "Choose a visual color theme for the editor and preview.": [
+        "Elija un tema de color visual para el editor y la vista previa."
+      ],
+      "Line Numbers": [
+        "Números de Línea"
+      ],
+      "Display line numbers in the editor": [
+        "Mostrar números de línea en el editor"
+      ],
+      "Type or paste your code here...": [
+        "Escriba o pegue su código aquí..."
+      ],
+      "Copy Code": [
+        "Copiar Código"
+      ],
+      "Code copied to clipboard!": [
+        "¡Código copiado al portapapeles!"
+      ],
+      "Code editor cannot be empty.": [
+        "El editor de código no puede estar vacío."
+      ]
+    }
+  },
+  "language.label": "Seleccione el lenguaje",
+  "language.help": "Configura el resaltado de sintaxis para el lenguaje seleccionado.",
+  "theme.label": "Tema de formato",
+  "theme.help": "Elija el esquema de colores para el editor y la visualización pública.",
+  "settings.title": "Configuración de CodeMirror",
+  "editor.placeholder": "Escriba o pegue su código aquí...",
+  "editor.copy": "Copiar Código",
+  "editor.copied": "¡Código copiado al portapapeles!",
+  "error.empty": "El editor de código no puede estar vacío."
+}
